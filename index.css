@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset */
+
+
+html{
+    font-size: 10px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+header{
+    background:#EAFFD0;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-top:4rem;
+}
+
+h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #F38181;
+
+}
+
+header nav{
+    display: flex;
+}
+
+header nav a{
+    text-decoration: none;
+    border: 1px white solid;
+    padding: 5px;
+    color: white;
+    background: #F38181;
+    display: block;
+    width: 60px;
+    text-align: center;
+    margin: .5rem;
+}
+
+.mainSection{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.mainAboutMe{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.mainAboutMe h3{
+    padding: 1rem;
+    font-size: 3rem;
+    transition: .3s;
+}
+
+
+.mainAboutMe button{
+    flex-basis: 1;
+    height: 4rem;
+    width: 12rem;
+    margin: 1rem;
+}
+.mainAboutMe h5{
+    padding: 1rem;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainImageBox{
+    height: 300px;
+    width: 400px;
+    border: solid 1px #FCE38A;
+    background-image: url('https://pbs.twimg.com/profile_images/1376217735378649088/q_sqT9Q5_400x400.jpg');
+    background-position: bottom 10px;
+    border-radius: 5px 20px 5px; 
+}
+
+.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.highlight p{
+    margin-top: 1rem;
+}
+
+.highlightImageBox{
+    border: solid 1px #F38181;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.highlightContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;;
+}
+
+footer{
+    background-color: #95E1D3;
+    /* position: absolute; */
+    position: fixed;
+    bottom: 0px;
+left: 0px;
+    /* bottom: 0; */
+    width: 100%;
+    /* height: 12rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+    height: 210px;
+    /* min-height: 100vh;
+    margin-top: auto; */
+
+}
+
+footer button{
+    width: 15rem;
+    height: 4.5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+button{
+    background-color: #FCE38A;
+    border: 1px solid white;
+    font-family:'Otomanopee One', sans-serif;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #F38181;
+    transform: rotate(-10deg);
+}
+
+header nav a:hover{
+    transform: rotate(10deg);
+}
+
+.highlightImageBox:hover{
+    transform: rotate(-10deg)
+}
+
+.mainAboutMe h3:hover{
+    font-size:4rem;
+}
+
+#box1{
+    background-image: url('https://ouch-cdn2.icons8.com/GT3fj6XsacfP40SqNNXi7nhm2QbhGhDJy53IqVHBCrE/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjUz/LzdhOGRlZjY5LTIx/ODYtNGZlNC05NDNl/LTYzY2QxNGVjNTc0/YS5zdmc.png'); 
+}
+
+#box2{
+    background-image: url("https://ouch-cdn2.icons8.com/-X3ZJ4yy-_3jqst77pyl6uusmZQaY8g4Kq3LaZ_f7L4/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjI0/LzY4YmZjYjVkLTIw/NjMtNDE1Zi05YjI3/LTk2MjQ0MmYwNDEy/Yi5zdmc.png");
+}
+
+#box3{
+    background-image: url("https://ouch-cdn2.icons8.com/JOzJZqxKJV_1gXt6JLRuNgwQCUwjO7R4HSzMJLABWZM/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDc0/LzI3YzY1YTc0LWQ1/NDctNDJmZS1hNzZj/LTVjYWY0ZWE5Njc1/MS5zdmc.png");
+}
+
+#box4{
+    background-image: url("https://ouch-cdn2.icons8.com/CypQBQVhdN4FQohgwjSSwMSWPkYrcgYpDQzbyhdJCpw/rs:fit:1368:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzUy/L2U3ZGIyNjI1LTUz/Y2MtNDUyMC04MDY0/LWE1YTZjNTNiMmMw/ZC5zdmc.png");
+    background-size: 100% 100%;
+}
+
+#box5{
+    background-image: url("https://ouch-cdn2.icons8.com/DrvgSNqv_Th7WqkOhcm_XQpJs36SaA48ztG_5MN19Ws/rs:fit:1216:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDA5/Lzk4ZWU4MTcyLTJm/MWQtNGQ5OC1hNzNk/LTRlODdkM2FkNDQw/NC5zdmc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#box6{
+    background-image: url("https://ouch-cdn2.icons8.com/ooNpvJz7RaFj1wB8V0yuYfpy7PuxOy6Ela4GxqI9YUA/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzIy/L2FjNWEwMjEwLWNm/OTQtNGUwYy1iNWIw/LTY0Zjg5YTQzYWQ1/YS5zdmc.png");
+}
+
+#box7{
+    background-image: url("https://ouch-cdn2.icons8.com/czhNtc_pZnKFzNdDfIx60kMDfIb-CjOymC2-348dXJM/rs:fit:979:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjEw/L2ViYTg3ZTNlLWEy/ZTItNDI3Yi1iYWI4/LTJiNTg2NTI0MGI2/MS5zdmc.png");
+}
+
+#box8{
+    background-image: url("https://ouch-cdn2.icons8.com/8YzkzyP_sb-RfPeUkcQcoO48mtok6rLo3barcUm1smM/rs:fit:616:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvODI3/L2Y4NThkYWQ5LTJl/NjAtNDBlZi1iMDA5/LWJiMzUxMTUzZDBk/NS5zdmc.png");
+}
+
+h6{
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: -3.8rem;
+}
+
+.social{
+    display: flex;
+    margin-top: -2rem;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.social a{
+    text-decoration: none;
+    border: 1px white solid;
+    padding: 5px;
+    color: white;
+    background: #F38181;
+    display: block;
+    width: 60px;
+    text-align: center;
+    margin: .5rem;
+
+}
+
+.social a:hover{
+    transform: rotate(10deg);
+    background-color:#FCE38A ;
+    color: black;
+}
