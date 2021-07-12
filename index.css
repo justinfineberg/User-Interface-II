@@ -51,8 +51,9 @@ table {
 
 
 html{
-    font-size: 10px;
+    font-size: 62.5%;
     font-family: 'Otomanopee One', sans-serif;
+    width: 100vw;
 }
 
 header{
@@ -78,12 +79,12 @@ header nav{
 
 header nav a{
     text-decoration: none;
-    border: 1px white solid;
-    padding: 5px;
+    border: .1px white solid;
+    padding: .5rem;
     color: white;
     background: #F38181;
     display: block;
-    width: 60px;
+    width: 6rem;
     text-align: center;
     margin: .5rem;
 }
@@ -93,7 +94,7 @@ header nav a{
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .mainAboutMe{
@@ -126,12 +127,13 @@ header nav a{
 }
 
 #mainImageBox{
-    height: 300px;
-    width: 400px;
-    border: solid 1px #FCE38A;
+    height: 30rem;
+    width: 40rem;
+    border: solid .1rem #FCE38A;
     background-image: url('https://pbs.twimg.com/profile_images/1376217735378649088/q_sqT9Q5_400x400.jpg');
-    background-position: bottom 10px;
-    border-radius: 5px 20px 5px; 
+    background-position: bottom 1rem;
+    border-radius: .5rem 2rem .5rem; 
+    margin-left: 4rem;
 }
 
 .highlight{
@@ -147,8 +149,8 @@ header nav a{
 
 .highlightImageBox{
     border: solid 1px #F38181;
-    height: 200px;
-    width: 200px;
+    height: 20rem;
+    width: 20rem;
     background-size: cover;
     cursor: pointer;
 }
@@ -157,15 +159,15 @@ header nav a{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 20px;;
+    padding-top: 2rem;
 }
 
 footer{
     background-color: #95E1D3;
     /* position: absolute; */
     position: fixed;
-    bottom: 0px;
-left: 0px;
+    bottom: 0rem;
+left: 0rem;
     /* bottom: 0; */
     width: 100%;
     /* height: 12rem; */
@@ -173,8 +175,8 @@ left: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: -50px;
-    height: 210px;
+    margin-bottom: -5rem;
+    height: 21rem;
     /* min-height: 100vh;
     margin-top: auto; */
 
@@ -189,7 +191,7 @@ footer button{
 
 button{
     background-color: #FCE38A;
-    border: 1px solid white;
+    border: .1rem solid white;
     font-family:'Otomanopee One', sans-serif;
     cursor: pointer;
 }
@@ -261,12 +263,12 @@ h6{
 
 .social a{
     text-decoration: none;
-    border: 1px white solid;
-    padding: 5px;
+    border: .1rem white solid;
+    padding: .5rem;
     color: white;
     background: #F38181;
     display: block;
-    width: 60px;
+    width: 6rem;
     text-align: center;
     margin: .5rem;
 
@@ -276,4 +278,66 @@ h6{
     transform: rotate(10deg);
     background-color:#FCE38A ;
     color: black;
+}
+
+.inFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 800px){
+    footer{
+        height: 15rem;
+        position: relative;
+        width: 100%;
+    }
+    .inFooter{
+        margin-top: 3.4rem;
+    }
+    #mainImageBox{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 16vh;
+    }
+    header nav{
+        flex-direction: column;
+        margin-top: -1rem;
+        margin: 0 auto;
+    }
+    header h1{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .mainSection{
+        flex-direction: column;
+    }
+
+    .mainAboutMe{
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        width: 80%;
+    }
+    .mainAboutMe h5{
+        width: 100%;
+    }
+    .inFooter{
+        margin-top: 4.6rem;
+    }
+
+    #mainImageBox{
+        margin: 0 auto;
+        margin-left: 3rem;
+    }
+
 }
